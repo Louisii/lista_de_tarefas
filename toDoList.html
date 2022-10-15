@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="icon" href="img/fav.png" type="image/gif" sizes="16x16">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <title>Todo List</title>
+</head>
+<body>
+
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-5 col-md-5 col-lg-4 p-3">
+      <header class="p-3">
+       <img class="img-fluid img-logo align-self-center"  src="img/logo.png" alt="to-do lista de tarefas" />
+      </header>
+      <section>
+        <form id="todo-form">
+          <input class="form-control m-3" type="text" id="todo-input" placeholder="Título">
+          <textarea  class="form-control m-3" type="text" id="todoDescription-input" placeholder="Descrição"></textarea>
+          <input class="form-control m-3" type="datetime-local" id="todoDateTime-input">
+          <button class="form-control btn btn-danger m-3" type="submit" id="add-button">Salvar</button>
+          <button class="form-control btn btn-outline-info m-3 " onclick="clearForm()" id="add-button">Limpar campos</button>
+        </form>
+      </section>
+    </div>
+
+    <div class="col-xs-0 col-sm-0 col-md-1 col-lg-1 p-3"></div>
+
+    <div class="col-xs-12 col-sm-7 col-md-6 col-lg-7 p-3">
+      <main>
+        <section>
+            <ul id="todo-items">
+              <!-- <li> </li> -->
+            </ul>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  
+
+  
+      
+  
+  
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
