@@ -8,13 +8,13 @@
 - JavaScript
 
 
-#### Preview do projeto:
+### Preview do projeto:
 
 
-Desktop
+####Desktop
 <img  alt="todo preview desktop" src="img/preview.png" width="700px"/>
 
 
-Mobile
+####Mobile
 <img  alt="todo preview mobile" src="img/previewMobile.png" width="300px"/>
 
