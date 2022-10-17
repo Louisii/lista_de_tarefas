@@ -4,6 +4,7 @@
 ### Tecnologias utilizadas:
 - HTML
 - css
+- Bootstrap
 - JavaScript
 
 
