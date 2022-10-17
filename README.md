@@ -10,9 +10,11 @@
 
 #### Preview do projeto:
 
+
 Desktop
 <img  alt="todo preview desktop" src="img/preview.png" width="700px"/>
 
+
 Mobile
-<img  alt="todo preview mobile" src="img/previewMobile.png" width="400px"/>
+<img  alt="todo preview mobile" src="img/previewMobile.png" width="300px"/>
 
