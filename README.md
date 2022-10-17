@@ -9,4 +9,4 @@
 
 #### Preview do projeto:
 
-<img  alt="todo preview" src="img/Todo_preview.png" width="700px"/>
+<img  alt="todo preview" src="img/preview.png" width="700px"/>
