@@ -10,4 +10,8 @@
 
 #### Preview do projeto:
 
-<img  alt="todo preview" src="img/preview.png" width="700px"/>
+<img  alt="todo preview desktop" src="img/preview.png" width="700px"/>
+Desktop
+
+<img  alt="todo preview mobile" src="img/previewMobile.png" width="700px"/>
+Mobile
