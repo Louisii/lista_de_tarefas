@@ -38,7 +38,12 @@
   .delete-button {
    width: 160px;
   }
+
   .edit-button {
+    width: 160px;
+  }
+
+  .save-edition-btn{
     width: 160px;
   }
 
