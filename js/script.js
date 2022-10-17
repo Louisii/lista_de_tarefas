@@ -74,7 +74,7 @@ const renderTodos = (todos) => {
     <p>${item.dateTime}</p>
     <button class="delete-button btn btn-danger m-1">Apagar</button>
     <button class="edit-button btn btn-danger m-1">Editar</button>
-    <button class="save-edition-btn btn btn-danger m-1" id="add-button">Salvar edição</button>
+    <button class="save-edition-btn btn btn-danger m-1">Salvar edição</button>
   `;
   //adiciona <li> à <ul>
   todoItemsList.append(div)
@@ -144,10 +144,13 @@ const deleteTodo = (id) => {
 //funçâo para editar tarefa 
 const editTodo = (id) => {
   
-  //filtra pelo id retorna todo
+  console.log(id)
+
   let editTodo = todos.filter(function(item) {
-    return item.id = id
+    return item.id == id
   });
+
+  console.log(editTodo)
 
   todoInput.value = editTodo[0].name
   todoDescriptionInput.value = editTodo[0].description
