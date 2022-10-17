@@ -74,7 +74,7 @@ const renderTodos = (todos) => {
     <p>${item.dateTime}</p>
     <button class="delete-button btn btn-danger m-1">Apagar</button>
     <button class="edit-button btn btn-danger m-1">Editar</button>
-    <button class="btn-salva-edicao form-control btn btn-danger m-3" onclick="saveEdition()" id="add-button">Salvar edição</button>
+    <button class="save-edition-btn btn btn-danger m-1" id="add-button">Salvar edição</button>
   `;
   //adiciona <li> à <ul>
   todoItemsList.append(div)
@@ -157,13 +157,16 @@ const editTodo = (id) => {
 
 const saveEdition = (id) => {
 
-  addTodo(todoInput.value, todoDescriptionInput.value, todoDateTimeInput.value)
+  if (todoInput.value != "") {
 
-  todos = todos.filter(function(item) {
-    return item.id != id
-  });
+    addTodo(todoInput.value, todoDescriptionInput.value, todoDateTimeInput.value)
 
-  addToLocalStorage(todos)
+    todos = todos.filter(function(item) {
+      return item.id != id
+    });
+
+    addToLocalStorage(todos)
+  }
 
 }
 
@@ -190,7 +193,7 @@ todoItemsList.addEventListener('click', function(event) {
     deleteTodo(event.target.parentElement.getAttribute('data-key'))
   }
 
-  if (event.target.classList.contains('btn-salva-edicao')) {
+  if (event.target.classList.contains('save-edition-btn')) {
     saveEdition(event.target.parentElement.getAttribute('data-key'))
   }
 })
